@@ -9,11 +9,7 @@ module.exports = function(items) {
   let message = ':art: 新しいアイテムが追加されました！\n\n';
 
   items.map(function(item) {
-    let itemMessage = `======================================================\n
-                  *【${item.title}】*\n
-                  【価格】- *${item.price}*\n
-                  ${item.link}
-                 `;
+    let itemMessage = `======================================================\n*【${item.title}】*\n【価格】- *${item.price}*\n${item.link}`;
     message+=itemMessage;
   });
 
