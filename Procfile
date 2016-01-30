@@ -1,1 +1,1 @@
-web: node app.js
+hubot: node app.js
