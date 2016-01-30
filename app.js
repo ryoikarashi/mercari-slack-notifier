@@ -14,8 +14,8 @@ app.listen(config.port);
 mongoose.connect(config.db.url);
 
 const job = new CronJob({
-  // run cron every second
-  cronTime: '* * * * * *',
+  // run cron every minute
+  cronTime: '* * * * *',
   onTick: cronJob,
   start: true,
   timeZone: 'Asia/Tokyo'
